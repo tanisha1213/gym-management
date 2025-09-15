@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Member Dashboard | Smart Gym</title>
+  <link rel="stylesheet" href="../css/member.css" /> 
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+  <!-- Firebase init -->
+  <script src="../js/firebase-init.js"></script>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Member Panel</h2>
+    <a href="#" id="viewDetailsLink">My Details</a>
+    <a href="#" id="viewBillsLink">View Bills</a>
+    <a href="#" id="viewNotificationsLink">View Notifications</a>
+    <div id="logoutBtn" class="logout-btn">Back</div>
+  </div>
+
+  <div class="main">
+    <h1>Welcome, <span id="memberName">Member</span></h1>
+    <div id="contentArea">
+      <p>Select an option from the sidebar.</p>
+    </div>
+  </div>
+
+  <script src="../js/member-dashboard.js"></script>
+</body>
+</html>

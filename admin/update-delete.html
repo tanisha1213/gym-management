@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Update/Delete Member</title>
+  <link rel="stylesheet" href="../css/update-delete.css" />
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="../js/firebase-init.js"></script>
+  <script src="../js/update-delete.js" defer></script>
+</head>
+<body>
+  <a href="dashboard.html" id="back-btn">← Back</a>
+  <div class="container">
+    <h1>Manage Members</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Joining Date</th>
+          <th>Package</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="membersTableBody"></tbody>
+    </table>
+  </div>
+
+  <!-- Edit Member Modal -->
+  <div id="editModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Edit Member</h2>
+      <form id="editMemberForm">
+        <input type="hidden" id="editId" />
+        
+        <label>Name:</label>
+        <input type="text" id="editName" required>
+
+        <label>Email:</label>
+        <input type="email" id="editEmail" required>
+
+        <label>Phone:</label>
+        <input type="text" id="editPhone" required>
+
+        <label>Joining Date:</label>
+        <input type="date" id="editJoiningDate" required>
+
+        <label>Package:</label>
+        <select id="editPackage" required>
+          <option value="">Select Package</option>
+          <option value="Monthly">Monthly</option>
+          <option value="Quarterly">Quarterly</option>
+          <option value="Yearly">Yearly</option>
+        </select>
+
+        <button type="submit">Update Member</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

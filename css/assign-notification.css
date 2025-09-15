@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.99)),
+              url("../images/bg.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+}
+#back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: #ff6600;
+  padding: 10px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#back-btn:hover {
+  background: rgba(255, 102, 0, 0.8);
+  color: white;
+  transform: translateX(-3px);
+}
+
+#back-btn::before {
+  content: "←";
+  font-size: 1.2rem;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 450px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ff6600;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  margin-bottom: 15px;
+  resize: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #ff6600, #ff8533);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #e65c00, #ff751a);
+  transform: translateY(-2px);
+}

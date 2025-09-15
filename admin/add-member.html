@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Member</title>
+   <link rel="stylesheet" href="../css/common.css" />
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="../js/firebase-init.js"></script>
+  <script src="../js/add-member.js" defer></script>
+</head>
+<body>
+  <a href="dashboard.html" id="back-btn">← Back</a>
+  <h1>Add Member</h1>
+
+  <div class="form-container">
+    <form id="addMemberForm">
+      <label>Full Name:</label>
+      <input type="text" id="fullName" required>
+      <label>Email:</label>
+      <input type="email" id="email" required>
+      <label>Phone:</label>
+      <input type="text" id="phone" required>
+      <label>Joining Date:</label>
+      <input type="date" id="joiningDate" required>
+      <label>Fee Package:</label>
+      <select id="package" required>
+        <option value="">Select Package</option>
+        <option value="Monthly">Monthly</option>
+        <option value="Quarterly">Quarterly</option>
+        <option value="Yearly">Yearly</option>
+      </select>
+      <button type="submit">Add Member</button>
+    </form>
+  </div>
+</body>
+</html>

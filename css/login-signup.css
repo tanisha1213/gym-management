@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.99)),
+    url("../images/bg.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: #1a1a1a;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  width: 100%;
+  max-width: 350px;
+  color: #fff;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffdd57;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: 2px solid #ffdd57;
+}
+
+button {
+  background-color: #ffdd57;
+  color: #000;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #e6c945;
+}
+
+.switch-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.switch-link a {
+  color: #ffdd57;
+  text-decoration: none;
+}
+#back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: #ff6600;
+  padding: 10px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+#back-btn:hover {
+  background: rgba(255, 102, 0, 0.8);
+  color: white;
+  transform: translateX(-3px);
+}
+#back-btn::before {
+  content: "←";
+  font-size: 1.2rem;
+}

@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  display: flex;
+  background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.99)),
+    url("../images/bg.jpg") no-repeat center center/cover;
+  color: #fff;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: rgba(0,0,0,0.85);
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.sidebar h2 {
+  color: #ff6600;
+  margin-bottom: 20px;
+}
+
+.sidebar a, .logout-btn {
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: white;
+  background: rgba(255,255,255,0.1);
+  text-decoration: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sidebar a:hover, .logout-btn:hover {
+  background: #ff6600;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: rgba(0,0,0,0.5);
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #ff6600;
+}
+
+input, button {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #ff6600;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e65c00;
+}
+.highlight {
+  background-color: #ffdd57 !important;
+  color: #000 !important;
+  font-weight: bold;
+}

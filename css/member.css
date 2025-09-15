@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.99)),
+              url("../images/bg.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  color: #fff;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: rgba(0,0,0,0.85);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  font-size: 35px;
+  color: #ff6600;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px rgba(255,102,0,0.7);
+}
+
+.sidebar a, .sidebar .logout-btn {
+    font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.sidebar a:hover, .sidebar .logout-btn:hover {
+  background-color: rgba(255,102,0,0.8);
+  cursor: pointer;
+}
+
+.logout-btn {
+  margin-top: auto;
+  background: rgba(255,102,0,0.2);
+  color: #ff6600;
+  text-align: center;
+  font-weight: bold;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.main h1 {
+  margin-bottom: 20px;
+  color: #ff6600;
+}
+
+#contentArea {
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(22, 27, 34, 0.9);
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  text-align: left;
+}
+
+th {
+  background-color: #ff6600;
+  color: #fff;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Diet Plans</title>
+  <link rel="stylesheet" href="../css/common.css">
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+  <!-- Firebase Init -->
+  <script src="../js/firebase-init.js"></script>
+
+  <!-- Page Script -->
+  <script src="../js/diet-plan.js" defer></script>
+</head>
+<body>
+  <a href="dashboard.html" id="back-btn">Back</a>
+  
+  <div class="form-container">
+  <form id="addDietForm">
+    
+    <!-- Plan Name -->
+    <label>Plan Name:</label>
+    <select id="planNameSelect" required>
+      <option value="">Select Plan</option>
+      <option value="Weight Loss">Weight Loss</option>
+      <option value="Muscle Gain">Muscle Gain</option>
+      <option value="Maintenance">Maintenance</option>
+      <option value="Custom">Custom</option>
+    </select>
+    <input type="text" id="planNameCustom" placeholder="Custom Plan Name" style="display:none;">
+    <label>Meal Time:</label>
+    <select id="mealTimeSelect" required>
+      <option value="">Select Meal Time</option>
+      <option value="Breakfast">Breakfast</option>
+      <option value="Lunch">Lunch</option>
+      <option value="Dinner">Dinner</option>
+      <option value="Snacks">Snacks</option>
+      <option value="Custom">Custom</option>
+    </select>
+    <input type="text" id="mealTimeCustom" placeholder="Custom Meal Time" style="display:none;">
+    <label>Description:</label>
+    <select id="descriptionSelect">
+      <option value="">Select Description</option>
+      <option value="High Protein">High Protein</option>
+      <option value="Low Carb">Low Carb</option>
+      <option value="Balanced Diet">Balanced Diet</option>
+      <option value="Custom">Custom</option>
+    </select>
+    <textarea id="descriptionCustom" placeholder="Custom Description" style="display:none;"></textarea>
+    <label>Calories:</label>
+    <select id="caloriesSelect">
+      <option value="">Select Calories</option>
+      <option value="1200">1200</option>
+      <option value="1500">1500</option>
+      <option value="1800">1800</option>
+      <option value="2000">2000</option>
+      <option value="Custom">Custom</option>
+    </select>
+    <input type="number" id="caloriesCustom" placeholder="Custom Calories" style="display:none;">
+    <button type="submit">Add Diet Plan</button>
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="../css/user.css">
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="../js/firebase-init.js"></script>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>User Panel</h2>
+    <a href="#" id="viewDetailsBtn">View Gym Details</a>
+    <a href="#" id="searchRecordsBtn">Search Records</a>
+    <div id="logout" class="logout-btn">Back</div>
+  </div>
+
+  <div class="main">
+    <h1>Welcome, User</h1>
+
+    <!-- Gym Details -->
+    <section id="gymDetailsSection">
+      <h2>Gym Details</h2>
+      <p><strong>Packages Available:</strong></p>
+      <ul>
+        <li>Monthly — ₹1000: Access to gym, 1 personal training session</li>
+        <li>Quarterly — ₹2700: Access to gym, 4 personal training sessions, diet plan
+</li>
+        <li>Yearly — ₹10000: Unlimited personal training, diet plan, supplement discount
+</li>
+      </ul>
+
+      <p><strong>Time Slots:</strong></p>
+      <ul>
+        <li>Morning: 6 AM – 9 AM</li>
+        <li>Afternoon: 12 PM – 3 PM</li>
+        <li>Evening: 5 PM – 9 PM</li>
+      </ul>
+
+      <p><strong>Facilities:</strong> Cardio, Strength Training, CrossFit, Yoga</p>
+    </section>
+
+    <!-- Search Records -->
+    <section id="searchRecordsSection" class="hidden">
+      <h2>Search Member Records</h2>
+      <input type="text" id="searchInput" placeholder="Search by name or email">
+      <table>
+        <thead>
+          <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Joining Date</th>
+            <th>Package</th>
+          </tr>
+        </thead>
+        <tbody id="membersTableBody"></tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="../js/user-dashboard.js"></script>
+</body>
+</html>

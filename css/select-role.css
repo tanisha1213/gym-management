@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url("../images/bg.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+  z-index: 1;
+}
+
+.container {
+  z-index: 2;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 65, 106, 0.4);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.role-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.role-buttons button {
+  background-color: #ffffff;
+  color: #00416a;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.role-buttons button:hover {
+  background-color: #00416a;
+  color: #ffffff;
+}
+
+.action-links {
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+.action-links a {
+  color: #ffffff;
+  text-decoration: underline;
+  margin: 0 10px;
+  transition: color 0.2s ease;
+}
+
+.action-links a:hover {
+  color: #d1e8ff;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Bill</title>
+  <link rel="stylesheet" href="../css/common.css" />
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="../js/firebase-init.js"></script>
+  <script src="../js/create-bill.js" defer></script>
+</head>
+<body>
+  <a href="dashboard.html" id="back-btn">← Back</a>
+  <h1>Create Bill</h1>
+  <div class="form-container">
+    <form id="createBillForm">
+      <label>Member:</label>
+      <select id="memberSelect" required>
+        <option value="">Select Member</option>
+      </select>
+      <label>Package:</label>
+      <input type="text" id="package" required readonly>
+      <label>Amount:</label>
+      <input type="number" id="amount" required>
+      <label>Due Date:</label>
+      <input type="date" id="dueDate" required>
+      <button type="submit">Create Bill</button>
+    </form>
+  </div>
+</body>
+</html>
